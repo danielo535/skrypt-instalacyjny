@@ -9,7 +9,7 @@
 
 Aby użyć skryptu instalacyjnego, uruchom to pojedyncze polecenie jako root. (najpierw upewnij się, że masz curl, wykonując „apt install curl”, a następnie ponownie uruchamiając VPS/Server)
 ```bash
-bash <(https://raw.githubusercontent.com/danielo535/skrypt-instalacyjny/main/instalator.sh)
+bash <(curl -s https://raw.githubusercontent.com/danielo535/skrypt-instalacyjny/main/instalator.sh)
 ```
 
 | Webserver        | Supported           |
