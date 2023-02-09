@@ -1,26 +1,52 @@
 #!/bin/bash
 
-echo "Wybierz opcję instalacji:"
-echo "1. Pterodactyl i Wings"
-echo "2. PHPMyAdmin"
-echo "3. Pterodactyl, Wings i PHPMyAdmin"
-read -p "Wybierz opcję (1/2/3): " option
+echo "Witaj w skrypcie instalacji Pterodactyl, Wings i PHPMyAdmin na Ubuntu i Debian."
 
-if [ $option -eq 1 ]; then
-  # Instalacja Pterodactyl i Wings
-  echo "Rozpoczynam instalację Pterodactyl i Wings..."
-  # Wprowadź komendy instalacyjne dla Pterodactyl i Wings
-  echo "Instalacja Pterodactyl i Wings zakończona pomyślnie."
-elif [ $option -eq 2 ]; then
-  # Instalacja PHPMyAdmin
-  echo "Rozpoczynam instalację PHPMyAdmin..."
-  # Wprowadź komendy instalacyjne dla PHPMyAdmin
-  echo "Instalacja PHPMyAdmin zakończona pomyślnie."
-elif [ $option -eq 3 ]; then
-  # Instalacja Pterodactyl, Wings i PHPMyAdmin
-  echo "Rozpoczynam instalację Pterodactyl, Wings i PHPMyAdmin..."
-  # Wprowadź komendy instalacyjne dla Pterodactyl, Wings i PHPMyAdmin
-  echo "Instalacja Pterodactyl, Wings i PHPMyAdmin zakończona pomyślnie."
-else
-  echo "Nieprawidłowa opcja."
-fi
+echo "Czy chcesz zainstalować Pterodactyl?"
+select yn in "Tak" "Nie"; do
+    case $yn in
+        Tak ) 
+            echo "Rozpoczynam instalację Pterodactyl..."
+            sudo apt-get update
+            sudo apt-get install -y curl gnupg2 lsb-release
+            curl https://repo.pterodactyl.io/WNMP/9/repo/pubkey.asc | sudo apt-key add -
+            echo "deb https://repo.pterodactyl.io/WNMP/9/deb/ lsb_release=stretch main" | sudo tee /etc/apt/sources.list.d/pterodactyl.list
+            sudo apt-get update
+            sudo apt-get install -y pterodactyl-daemon
+            echo "Instalacja Pterodactyl zakończona pomyślnie."
+            break;;
+        Nie ) break;;
+    esac
+done
+
+echo "Czy chcesz zainstalować Wings?"
+select yn in "Tak" "Nie"; do
+    case $yn in
+        Tak ) 
+            echo "Rozpoczynam instalację Wings..."
+            sudo apt-get update
+            sudo apt-get install -y curl gnupg2 lsb-release
+            curl https://repo.pterodactyl.io/WNMP/9/repo/pubkey.asc | sudo apt-key add -
+            echo "deb https://repo.pterodactyl.io/WNMP/9/deb/ lsb_release=stretch main" | sudo tee /etc/apt/sources.list.d/pterodactyl.list
+            sudo apt-get update
+            sudo apt-get install -y pterodactyl-panel
+            echo "Instalacja Wings zakończona pomyślnie."
+            break;;
+        Nie ) break;;
+    esac
+done
+
+echo "Czy chcesz zainstalować PHPMyAdmin?"
+select yn in "Tak" "Nie"; do
+    case $yn in
+        Tak ) 
+            echo "Rozpoczynam instalację PHPMyAdmin..."
+            sudo apt-get update
+            sudo apt-get install -y phpmyadmin
+            echo "Instalacja PHPMyAdmin zakończona pomyślnie."
+            break;;
+        Nie ) break;;
+    esac
+done
+
+echo "Instalacja zakończona."
