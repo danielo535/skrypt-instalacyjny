@@ -2,6 +2,8 @@
 
 # 💻 wielo zadaniowy skrypt instalacyjny 💻 
 
+## SKRYPT JEST ROBIONY JEST W FAZIE BETA
+
 
 ## INSTALACJA
 
