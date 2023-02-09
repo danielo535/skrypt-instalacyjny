@@ -20,7 +20,7 @@ then
   sudo bash install.sh
   echo "Panel Pterodactyl został zainstalowany pomyślnie!"
 
-if [ $option == "2" ]
+elif [ $option == "2" ]
 then
   echo "Rozpoczynam instalację PHPMyAdmin"
   sudo apt-get update
