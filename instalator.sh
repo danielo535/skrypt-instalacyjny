@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Instalacja phpMyAdmin
-install_phpmyadmin() {
+install_phpmyadmin(){
   sudo apt-get update
   sudo apt-get install phpmyadmin -y
   sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
@@ -14,7 +14,7 @@ install_phpmyadmin() {
 }
 
 # Instalacja Wings
-install_wings() {
+install_wings(){
   sudo apt-get update
   sudo apt-get install nodejs npm -y
   sudo npm install -g wings-cli
@@ -22,7 +22,7 @@ install_wings() {
 }
 
 # Instalacja panelu Pterodactyl
-install_pterodactyl() {
+install_pterodactyl(){
   sudo apt-get update
   sudo apt-get install curl -y
   curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
