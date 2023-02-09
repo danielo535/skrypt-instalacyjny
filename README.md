@@ -5,7 +5,7 @@
 
 Aby użyć skryptu instalacyjnego, uruchom to pojedyncze polecenie jako root. (najpierw upewnij się, że masz curl, wykonując „apt install curl”, a następnie ponownie uruchamiając VPS/Server)
 ```bash
-to do
+bash <(https://raw.githubusercontent.com/danielo535/skrypt-instalacyjny-phpmyadmin-pterodactyl-wings/main/instalator.sh)
 ```
 
 ## Pomoc i wsparcie
@@ -52,6 +52,6 @@ Lista obsługiwanych instalacji dla panelu i Wings oraz phpmyadmin (instalacje o
 _\* Ubuntu 16 i Debian 8 nie są już obsługiwane, ponieważ Pterodactyl nie obsługuje ich aktywnie._
 
 
-If you have tested any versions that are not on this list or have the question mark please contact danielo535#1110 on Discord even if the script didn't work on that version. 
+Jeśli testowałeś wersje, których nie ma na tej liście lub masz pytania, skontaktuj się z danielo535#1110 na Discordzie 
 
 
