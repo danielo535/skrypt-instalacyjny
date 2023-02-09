@@ -23,7 +23,7 @@ then
 elif [ $option == "2" ]
 then
   echo "Rozpoczynam instalację PHPMyAdmin"
-  # tutaj możesz dodać komendy do instalacji PHPMyAdmin
+  sudo apt-get update
   echo "Instalacja zakończona pomyślnie"
 
 elif [ $option == "3" ]
@@ -41,7 +41,7 @@ then
 elif [ $option == "4" ]
 then
   echo "Rozpoczynam instalację Pterodactyl Wings"
-  # tutaj możesz dodać komendy do instalacji Pterodactyl Wings
+  sudo apt-get update
   echo "Instalacja zakończona pomyślnie"
 
 elif [ $option == "5" ]
