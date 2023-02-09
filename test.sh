@@ -20,13 +20,13 @@ then
   sudo bash install.sh
   echo "Panel Pterodactyl został zainstalowany pomyślnie!"
 
-elif [ $option == "2" ]
+if [ $option == "2" ]
 then
   echo "Rozpoczynam instalację PHPMyAdmin"
   sudo apt-get update
   echo "Instalacja zakończona pomyślnie"
 
-elif [ $option == "3" ]
+if [ $option == "3" ]
 then
   sudo apt-get update
   sudo apt-get install phpmyadmin -y
@@ -38,13 +38,13 @@ then
   sudo systemctl restart nginx
   echo "phpMyAdmin został zainstalowany pomyślnie!"
 
-elif [ $option == "4" ]
+if [ $option == "4" ]
 then
   echo "Rozpoczynam instalację Pterodactyl Wings"
   sudo apt-get update
   echo "Instalacja zakończona pomyślnie"
 
-elif [ $option == "5" ]
+if [ $option == "5" ]
 then
   echo "Rozpoczynam instalację Pterodactyl Wings"
   exit 1
