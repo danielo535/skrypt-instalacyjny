@@ -1,4 +1,5 @@
 #!/bin/bash
+#!/usr/bin/env bash
 
 # Instalacja phpMyAdmin
 install_phpmyadmin(){
