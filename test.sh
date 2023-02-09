@@ -46,4 +46,3 @@ then
   echo "Rozpoczynam instalację Pterodactyl, Wings i PHPMyAdmin"
   # tutaj możesz
   echo "Instalacja zakończona pomyślnie"
-fi
