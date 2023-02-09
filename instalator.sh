@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Instalacja phpMyAdmin
 install_phpmyadmin(){
   sudo apt-get update
