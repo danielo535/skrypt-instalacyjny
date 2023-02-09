@@ -24,7 +24,14 @@ if [ $option == "2" ]
 then
   echo "Rozpoczynam instalację PHPMyAdmin"
   sudo apt-get update
-  echo "Instalacja zakończona pomyślnie"
+  sudo apt-get install phpmyadmin -y
+  sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+  sudo apt-get install php8.0-fpm php8.0-mysql php8.0-mysqli
+  sudo apt-get install php8.0-xml
+  sudo apt-get install php8.0-mbstring php8.0-zip php8.0-gd
+  sudo systemctl restart php8.0-fpm
+  sudo systemctl restart nginx
+  echo "phpMyAdmin został zainstalowany pomyślnie!"
 
 if [ $option == "3" ]
 then
