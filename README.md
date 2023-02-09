@@ -52,6 +52,6 @@ Lista obsługiwanych instalacji dla panelu i Wings oraz phpmyadmin (instalacje o
 _\* Ubuntu 16 i Debian 8 nie są już obsługiwane, ponieważ Pterodactyl nie obsługuje ich aktywnie._
 
 
-If you have tested any versions that are not on this list or have the question mark please contact Ibrahim#0002 on Discord even if the script didn't work on that version. 
+If you have tested any versions that are not on this list or have the question mark please contact danielo535#1110 on Discord even if the script didn't work on that version. 
 
 
