@@ -1,12 +1,21 @@
+![Logo Image](https://github.com/guldkage/Pterodactyl-Installer/blob/main/configs/installer.png?raw=true)
+
 # 💻 wielo zadaniowy skrypt instalacyjny 💻 
 
 
-## Installation
+## INSTALACJA
 
 Aby użyć skryptu instalacyjnego, uruchom to pojedyncze polecenie jako root. (najpierw upewnij się, że masz curl, wykonując „apt install curl”, a następnie ponownie uruchamiając VPS/Server)
 ```bash
 bash <(https://raw.githubusercontent.com/danielo535/skrypt-instalacyjny-phpmyadmin-pterodactyl-wings/main/instalator.sh)
 ```
+
+| Webserver        | Supported           |
+| ---------------- | --------------------| 
+| NGINX            | :white_check_mark:  |
+| Apache           | :x:                 |
+| LiteSpeed        | :x:                 |
+| Caddy            | :x:                 |
 
 ## Pomoc i wsparcie
 
@@ -15,42 +24,6 @@ Aby uzyskać pomoc i wsparcie dotyczące samego skryptu, możesz dołączyć do 
 ## Obsługiwane instalacje
 
 Lista obsługiwanych instalacji dla panelu i Wings oraz phpmyadmin (instalacje obsługiwane przez ten skrypt instalacyjny).
-
-
-### Supported panel operating systems and webservers
-
-| Operating System | Version | nginx support      | PHP Version |
-| ---------------- | ------- | ------------------ | ----------- |
-| Ubuntu           | 14.04   | :red_circle:       |             |
-|                  | 16.04   | :red_circle: \*    |             |
-|                  | 18.04   | :white_check_mark: | 8.0         |
-|                  | 20.04   | :white_check_mark: | 8.0         |
-| Debian           | 8       | :red_circle: \*    |             |
-|                  | 9       | :white_check_mark: | 8.0         |
-|                  | 10      | :white_check_mark: | 8.0         |
-|                  | 11      | :white_check_mark: | 8.0         |
-| CentOS           | 6       | :red_circle:       |             |
-|                  | 7       | :white_check_mark: | 8.0         |
-|                  | 8       | :white_check_mark: | 8.0         |
-
-### Supported Wings operating systems
-
-| Operating System | Version | Supported          |
-| ---------------- | ------- | ------------------ |
-| Ubuntu           | 14.04   | :red_circle:       |
-|                  | 16.04   | :red_circle: \*    |
-|                  | 18.04   | :white_check_mark: |
-|                  | 20.04   | :white_check_mark: |
-| Debian           | 8       | :red_circle:       |
-|                  | 9       | :white_check_mark: |
-|                  | 10      | :white_check_mark: |
-|                  | 11      | :white_check_mark: |
-| CentOS           | 6       | :red_circle:       |
-|                  | 7       | :white_check_mark: |
-|                  | 8       | :white_check_mark: |
-
-_\* Ubuntu 16 i Debian 8 nie są już obsługiwane, ponieważ Pterodactyl nie obsługuje ich aktywnie._
-
 
 Jeśli testowałeś wersje, których nie ma na tej liście lub masz pytania, skontaktuj się z danielo535#1110 na Discordzie 
 
