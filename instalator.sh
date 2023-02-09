@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Skrypt zrobiony przez danielo535#1110
-
 # Instalacja phpMyAdmin
 install_phpmyadmin() {
   sudo apt-get update
