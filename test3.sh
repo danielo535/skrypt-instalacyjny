@@ -4,7 +4,7 @@
     echo "[1] Install Panel. | Installs latest version of Pterodactyl Panel"
     echo "[2] Install Wings. | Installs latest version of Pterodactyl Wings."
     echo "[3] Install PHPMyAdmin. | Installs PHPMyAdmin. (Installs using NGINX)"
-    read -r "Wybierz opcję (1, 2, 3 lub 4): " option
+    read -r option
     case $option in
         1 ) option=1
             start
