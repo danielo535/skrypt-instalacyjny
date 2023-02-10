@@ -4,7 +4,7 @@ echo "Wybierz opcję instalacji:"
 echo "1) Pełna instalacja"
 echo "2) Instalacja podstawowa"
 echo "3) Anulowanie instalacji"
-read -r "Wybierz opcję (1, 2, 3 lub 4): " option
+read -r option
 
 case $option in
     1)
