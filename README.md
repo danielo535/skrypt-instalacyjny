@@ -16,8 +16,6 @@ bash <(curl -s https://raw.githubusercontent.com/danielo535/skrypt-instalacyjny/
 | ---------------- | --------------------| 
 | NGINX            | :white_check_mark:  |
 | Apache           | :x:                 |
-| LiteSpeed        | :x:                 |
-| Caddy            | :x:                 |
 
 ## Pomoc i wsparcie
 
