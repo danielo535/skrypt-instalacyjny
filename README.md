@@ -19,7 +19,7 @@ bash <(curl -s https://raw.githubusercontent.com/danielo535/skrypt-instalacyjny/
 
 ## Pomoc i wsparcie
 
-Aby uzyskać pomoc i wsparcie dotyczące samego skryptu, możesz dołączyć do naszego serwera discord https://discord.gg/BKRtZsH4jY
+Aby uzyskać pomoc i wsparcie dotyczące samego skryptu, możesz dołączyć do naszego serwera discord soon/danielo535#1110
 
 ## Obsługiwane instalacje
 
